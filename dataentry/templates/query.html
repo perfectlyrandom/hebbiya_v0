@@ -1,0 +1,11 @@
+{% block title %}Enter your query{% endblock %}
+{% block content %}
+<h2>Add Entry</h2>
+<form method="post" enctype="multipart/form-data">
+    <table>
+        {{ form }}
+    </table>
+    {% csrf_token %}
+    <button type="submit">Create</button>
+</form>
+{% endblock %}
